@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    color: #696969;
+}
+
+h2 {
+    color: #696969;
+    border: solid 1px #FF0000;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#container {
+    background-color: #DCDCDC;
+    padding: 5px 30px 30px;
+    height: 100vh;
+}
+
+#container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#sidebar {
+    background-color: #2F4F4F;
+    color: #FFFFFF;
+    float: left;
+    width: 15%;
+    margin-right: 2%;
+}
+
+#content {
+    background-color: #FFFFFF;
+    float: right;
+    width: 83%;
+}
+
+#inner-content {
+    padding: 20px;
+}
