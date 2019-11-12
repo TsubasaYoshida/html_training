@@ -1,0 +1,12 @@
+#article {
+    display: inline;
+}
+
+#text-gray {
+    opacity: .5;
+}
+
+#expand {
+    cursor: pointer;
+    color: #fd7e14;
+}
