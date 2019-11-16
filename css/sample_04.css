@@ -1,0 +1,42 @@
+#toggle {
+    display: none;
+}
+
+#toggle + label {
+    display: flex;
+    cursor: pointer;
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#toggle + label::before {
+    content: 'ONにする';
+    width: 200px;
+    background-color: #CCCCCC;
+    border-radius: 10px 0 0 10px;
+}
+
+#toggle + label::after {
+    content: 'OFF';
+    width: 200px;
+    background-color: crimson;
+    border-radius: 0 10px 10px 0;
+}
+
+#toggle:checked + label::before {
+    content: 'ON';
+    width: 200px;
+    background-color: dodgerblue;
+    border-radius: 10px 0 0 10px;
+}
+
+#toggle:checked + label::after {
+    content: 'OFFにする';
+    width: 200px;
+    background-color: #CCCCCC;
+    border-radius: 0 10px 10px 0;
+}
