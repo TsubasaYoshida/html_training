@@ -1,3 +1,7 @@
+a:hover {
+    opacity: 70%;
+}
+
 .dropdown {
     display: flex;
 }
@@ -42,7 +46,7 @@
 }
 
 .dropdown li ul li a {
-    color: #696969;
+    color: #000000;
     text-decoration-line: none;
     display: block;
 }
