@@ -1,0 +1,68 @@
+body, h1, ul {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    opacity: 70%;
+}
+
+header {
+    width: 100%;
+    background-color: #FCD900;
+    padding-left: 20px;
+}
+
+h1 {
+    font-size: 20px;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+}
+
+nav > ul {
+    margin-left: auto;
+    padding-right: 30px;
+}
+
+nav > ul > li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 50px;
+    position: relative;
+}
+
+nav > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+nav > ul > li > ul {
+    display: none;
+    position: absolute;
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+nav > ul > li:hover ul {
+    display: block;
+}
+
+nav > ul > li > ul > li {
+    list-style-type: none;
+    border-top: solid #125115;
+    border-right: solid #125115;
+    border-left: solid #125115;
+    line-height: 36px;
+}
+
+nav > ul > li > ul > li:last-child {
+    border-bottom: solid #125115;
+}
