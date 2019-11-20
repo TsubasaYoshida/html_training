@@ -7,28 +7,23 @@ a {
     color: black;
 }
 
-a:hover {
-    opacity: 70%;
-}
-
 header {
     width: 100%;
     background-color: #FCD900;
-    padding-left: 20px;
 }
 
 h1 {
     font-size: 20px;
-    padding: 10px;
+    padding: 10px 0;
 }
 
 nav {
     display: flex;
+    margin: 0 20px;
 }
 
 nav > ul {
     margin-left: auto;
-    padding-right: 30px;
 }
 
 nav > ul > li {
@@ -39,16 +34,11 @@ nav > ul > li {
     position: relative;
 }
 
-nav > ul > li > a:hover {
-    text-decoration: underline;
-}
-
 nav > ul > li > ul {
     display: none;
     position: absolute;
     padding-left: 0;
-    text-align: center;
-    width: 100%;
+    background-color: #125115;
 }
 
 nav > ul > li:hover ul {
@@ -57,12 +47,25 @@ nav > ul > li:hover ul {
 
 nav > ul > li > ul > li {
     list-style-type: none;
-    border-top: solid #125115;
-    border-right: solid #125115;
-    border-left: solid #125115;
-    line-height: 36px;
+    line-height: 20px;
+    padding: 5px;
 }
 
-nav > ul > li > ul > li:last-child {
-    border-bottom: solid #125115;
+nav > ul > li > ul > li > a {
+    color: #FFFFFF;
+}
+
+nav > ul > li > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+nav > ul > li > a:hover:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: -5%;
+    width: 110%;
+    height: 3px;
+    background-color: #004091;
 }
