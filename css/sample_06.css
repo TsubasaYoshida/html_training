@@ -101,17 +101,17 @@ h1 {
     }
 
     .menu > ul > li {
-        padding: 10px 10px 10px 15px;
+        padding: 5px 5px 5px 10px;
         border-bottom: 3px solid #CCC;
         font-weight: bold;
     }
 
     .menu > ul > li > ul {
-        margin-top: 10px;
+        margin-top: 5px;
     }
 
     .menu > ul > li > ul > li {
-        padding: 10px 10px 10px 15px;
+        padding: 5px 5px 5px 10px;
         border-top: 1px solid #CCC;
         font-weight: normal;
     }
