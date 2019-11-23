@@ -8,6 +8,10 @@ a {
     color: black;
 }
 
+li > a {
+    display: block;
+}
+
 header {
     width: 100%;
     height: 50px;
@@ -92,10 +96,30 @@ h1 {
         transition: ease .5s;
     }
 
-    .menu ul li {
-        padding: 10px 10px 10px 15px;
-        border-bottom: 1px solid #CCC;
+    .menu ul {
+        list-style: none;
     }
+
+    .menu > ul > li {
+        padding: 10px 10px 10px 15px;
+        border-bottom: 3px solid #CCC;
+        font-weight: bold;
+    }
+
+    .menu > ul > li > ul {
+        margin-top: 10px;
+    }
+
+    .menu > ul > li > ul > li {
+        padding: 10px 10px 10px 15px;
+        border-top: 1px solid #CCC;
+        font-weight: normal;
+    }
+
+    .menu > ul > li > ul > li:last-child {
+        padding-bottom: 0;
+    }
+
 }
 
 /* for PC */
