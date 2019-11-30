@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>sample_08</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="./js/sample_08.js"></script>
+</head>
+<body>
+
+<div class="article">
+```s
+console.log('Hello World');
+console.log('Hello World');
+$(function(){
+  $('.hamburger').on('click', function(){
+    $(this).toggleClass('open');
+    $('.menu').toggleClass('open');
+  });
+});
+```e
+</div>
+
+</body>
+</html>
